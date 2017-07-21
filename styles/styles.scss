@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto');
+$text-color: #333;
+$secondary: #be1d2c;
+$secondary-text: #b0b0b0;
+
+$break-medium: 1100px;
+
+* {
+  color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+button, a, label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+p, span {
+  font-family: 'Roboto', sans-serif;
+}
+em {
+  color: $secondary !important;
+  font-style: normal;
+}
+.top-bar, .menu {
+  background: #eeeeee;
+}
+.top-bar ul, div.container.top-bar {
+  background: #ffffff;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.hr::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: -2.5px;
+}
+.hr2 {
+  width: 150px;
+  height: 1px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.hr2::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  left: 71.5px;
+  top: -2.5px;
+  position: absolute;
+  background: #ccc;
+}
+
+.button {
+  background-color: $secondary;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+.card {
+  .card-section {
+    h4 {
+      text-transform: uppercase;
+      font-size: 1.25rem;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    a {
+      color: $secondary;
+      text-transform: uppercase;
+      font-size: .75rem;
+    }
+    .card-cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      span.hr {
+        position: relative;
+        height: 1px;
+        width: calc(100% - 6rem);
+        border-bottom: 1px solid #ccc;
+        &::before {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
